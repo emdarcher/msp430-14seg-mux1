@@ -97,6 +97,9 @@ dp0_A     -9 o       10-   GND0_A
 const uint8_t   a_gnd_bits[] =  {GND0_A,GND1_A,GND2_A,GND3_A};
 const uint8_t   b_gnd_bits[] =  {GND0_B,GND1_B,GND2_B,GND3_B};
 
+
+//splitting word into bytes link:
+// https://answers.yahoo.com/question/index?qid=20100414100402AATfyLJ
 const uint16_t  char_segs[] =   {
 //            p b    
 //  A:        dKGJLDCB

@@ -33,6 +33,7 @@ dp0_A     -9 o       10-   GND0_A
 */
 
 #ifndef iee3785_mux
+
 #define iee3785_mux
 
 //includes
@@ -75,5 +76,21 @@ dp0_A     -9 o       10-   GND0_A
 #define M_B K_A
 #define Ga_B Gb_A
 #define H_B J_A
+//dp is shared
+
+//1st GND shift reg (TPIC6B595)
+#define DIGIT03_SR_SS SR_DC_SS
+
+//for digits 0-3 GNDS
+#define GND0_A  BIT0
+#define GND0_B  BIT1
+#define GND1_A  BIT2
+#define GND1_B  BIT3
+#define GND2_A  BIT4
+#define GND2_B  BIT5
+#define GND3_A  BIT6
+#define GND3_B  BIT7
+
+
 
 #endif

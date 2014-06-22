@@ -1,6 +1,9 @@
 #change to correct file
 #OBJECTS = main.o 
-OBJECTS = test4chars1.c iee3785_mux.c
+TARGET = test4chars1
+SRC = $(TARGET).c
+LIBS = iee3785.c
+OBJECTS = $(SRC) $(LIBS)
  
 CC = msp430-gcc
 #change to correct ic here
@@ -14,7 +17,7 @@ all : $(OBJECTS)
 
  
 clean:
-	rm -fr $(OBJECTS) main.elf
+	rm -fr  main.elf
  
 erase:
 	mspdebug rf2500 "erase"

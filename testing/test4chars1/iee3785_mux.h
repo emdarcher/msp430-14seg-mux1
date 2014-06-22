@@ -38,6 +38,7 @@ dp0_A     -9 o       10-   GND0_A
 
 //includes
 #include <msp430.h>
+#include <stdint.h>
 
 //shift register daisy chain CS/SS pin
 #define SR_DC_SS BIT4
@@ -92,5 +93,8 @@ dp0_A     -9 o       10-   GND0_A
 #define GND3_B  BIT7
 
 
+//global variables
+const uint8_t   a_gnd_bits[] =  {GND0_A,GND1_A,GND2_A,GND3_A};
+const uint8_t   b_gnd_bits[] =  {GND0_B,GND1_B,GND2_B,GND3_B};
 
 #endif

@@ -1,6 +1,6 @@
 #change to correct file
 #OBJECTS = main.o 
-OBJECTS = test4chars1.c
+OBJECTS = test4chars1.c iee3785_mux.c
  
 CC = msp430-gcc
 #change to correct ic here

@@ -1,29 +1,29 @@
 //main code
 
-//	Header Files
+//  Header Files
 
 #include <msp430.h> //include msp430 stuff
 
-//	Preprocessor Definitions
+//  Preprocessor Definitions
 
-//	Global Variables
+//  Global Variables
 
-//	Function Prototypes/Definitions
+//  Function Prototypes/Definitions
 
 void main(void) {
-	WDTCTL = WDTPW + WDTHOLD; //disable watchdog
-	
-	//initialization stuff here
-		//remember to enable any pull-up/downs!
-	
-	//infinite loop
-	for(;;) {
-
-	}
-	//return 0; //should never reach this	
+    WDTCTL = WDTPW + WDTHOLD; //disable watchdog
+    
+    //initialization stuff here
+    //remember to enable any pull-up/downs!
+    
+    //infinite loop
+    for(;;) {
+    
+    }
+    //return 0; //should never reach this	
 }
 
-//	Functions
+//  Functions
 
-//	Interrupt Service Routines
+//  Interrupt Service Routines
 
